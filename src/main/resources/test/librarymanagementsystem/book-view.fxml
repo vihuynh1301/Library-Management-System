@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="test.librarymanagementsystem.BookController">
+   <children>
+      <Button fx:id="reserveButton" layoutX="833.0" layoutY="39.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="218.0" text="Reserve This Book" />
+      <Label layoutX="30.0" layoutY="44.0" text="Book View" />
+      <TableView fx:id="bookTableView" layoutX="30.0" layoutY="74.0" prefHeight="500.0" prefWidth="1020.0">
+        <columns>
+          <TableColumn fx:id="bookIDTableColumn" prefWidth="32.0" text="ID" />
+            <TableColumn fx:id="titleTableColumn" prefWidth="324.0" text="Title" />
+            <TableColumn fx:id="publisherIDTableColumn" prefWidth="119.0" text="Publisher" />
+            <TableColumn fx:id="publishDateTableColumn" prefWidth="135.0" text="PublishDate" />
+            <TableColumn fx:id="copyTableColumn" minWidth="3.0" prefWidth="111.0" text="# of Copies" />
+            <TableColumn fx:id="categoryTableColumn" minWidth="0.0" prefWidth="136.0" text="Category" />
+            <TableColumn fx:id="locationTableColumn" minWidth="0.0" prefWidth="162.0" text="Location" />
+        </columns>
+      </TableView>
+      <TextField fx:id="keywordTextField" layoutX="100.0" layoutY="39.0" prefHeight="26.0" prefWidth="712.0" />
+      <TextField fx:id="usernameTextField" layoutX="101.0" layoutY="10.0" prefHeight="26.0" prefWidth="308.0" />
+      <Label fx:id="status" layoutX="834.0" layoutY="7.0" prefHeight="32.0" prefWidth="218.0" text="Status" textAlignment="CENTER" />
+      <Text fx:id="userType" layoutX="29.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Name" />
+      <Button fx:id="deleteButton" layoutX="31.0" layoutY="581.0" mnemonicParsing="false" text="Delete" />
+      <Button fx:id="updateButton" layoutX="127.0" layoutY="581.0" mnemonicParsing="false" text="Update" />
+      <TextField fx:id="updateTextField" layoutX="188.0" layoutY="581.0" promptText=" Seperated by &quot;,&quot;" />
+      <TextField fx:id="categoryTextField" layoutX="513.0" layoutY="10.0" prefHeight="26.0" prefWidth="299.0" />
+      <Label layoutX="444.0" layoutY="15.0" text="CategoryID" />
+   </children>
+</Pane>
