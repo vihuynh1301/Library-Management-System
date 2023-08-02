@@ -1,7 +1,7 @@
 # Library-Management-System
 A library management using Java, JDBC, AWS and SQL. Demo with app view and terminal interaction.
 
-# Author: Vi Huynh
+# Author: Vi Huynh, Derrick Nguyen, Harley Phung
 # Professors: Dianna Foreback, Harold Connamacher, Yinghui Wu.
 Spring 2023
 
